@@ -1,0 +1,128 @@
+Version 1.2.0
+	- Complete Re-write of code for more consistency and better organization
+	- Removing referenced to no longer functioning extensions and replacing with active extensions
+
+Version 1.1.9
+	- Added Item pick-ups to log files
+	- Added pauses to log files
+	- Added player specific heals to the log files
+	- Added sm_6v6 and sm_9v9
+	- Modified sm_scrim to pull the matchmod_league CVAR to determine what configs to Run
+	- Removed sm_matchmod_begin
+
+Version 1.1.8
+	- Expanded map auto-detection to cover arena, territory control, and bball
+	- Added support for Arena game type to the scoring routines 
+	- Added support for Territory Control to the scoring routines
+	- Removed CVAR matchmod_public and matchmod_admflag
+	- Modified all commands so the standard override options will work
+	- Added damage output statistics to the server logs for parsers
+
+Version 1.1.7
+	- Added size to Hostname prefix to accomodate longer server names
+	- Modified some of the CVARs to not replicate what doesn't need to be replicated
+	- Added autodetection of arena map type
+	- Added ability to define where STVs will be saved
+	- SDKHooks is now an optional extension
+	- If SDKHooks is present, the Game Description will be changed to reflect the league config
+	- Added CVAR matchmod_public to allow for configurations that allow public to access some commands
+	- Added CVAR matchmod_stvfolder to define where the STVs will be saved relativeto /TF2 folder
+	- Added CVAR matchmod_description to allow the shortcut configs to define the STV prefix and the modified game description
+
+
+Version 1.1.6
+	- Moved 15 second warning to center text
+	- added !extend command to allow teams to quickly extend scrims
+	- Extended logging to cover all admin commands
+
+Version 1.1.5
+	- Moved teamname CVARs to auto config file
+	- Created new !match/!scrim command to quickly get matches up and running
+
+Version 1.1.5
+	- Moved teamname CVARs to auto config file
+	- Created new !match/!scrim command to quickly get matches up and running
+
+Version 1.1.4
+	- Added tf2lobby.com integration
+	- Removed the adscoring an ctfscoring CVARs, this is now handled as part of the map detection
+
+Version 1.1.3
+	- Added a prematch/postmatch cfg execution to allow server admins to load/unload plugins
+	- Added Admin Menu API intgeration of some of the base functions
+
+Version 1.1.2
+	- Added Localization support
+	- Modified PUG configs to allow standard tournament UI
+	- Removed a couple unused functions
+
+Version 1.1.1
+	- Modified Final Score wording to make the final results clearer
+	- Added Logging of Admin commands to Sourcemod Log and SMActivity functions
+
+Version 1.1.0
+	- Added map autodetection and configuration using the matchmod_league CVAR
+
+
+Version 1.0.9
+- Hooked ServerName variables to detect when changes occur
+- Added ServerOp defined flag to access admin features
+- Reorganized code, cleaned up section
+- Modified Announcer to be a bit easer to see
+
+Version 1.0.8
+- Modified Scoring notification to be delayed
+
+Version 1.0.7
+- Reconfigured mp_tournament_restart hook to allow its usage to ensure UI is active without stopping the match in progress until the start of the 1st half. This allows league configs to have the tournament_restart command in them without breaking the mod.
+- Modified some of the scoring message to be in the hintbox and not in chat
+
+Version 1.0.6
+- Modified CTF scoring slightly to allow matches to end at flag captures
+
+Version 1.0.5
+- Modified scoring routine to cleaning handle King of the Flag
+
+Version 1.0.4
+- Modified mp_winlimit during second half to not matter to match how rules are interpreted
+- Changed Panel to only display of sm_readystatus is used.
+
+Version 1.0.3
+- Blocking tournament_readystate command while Ready-Up is enabled
+
+Version 1.0.2
+- Ready-up bug fixed that prevented ready-up for the second half and overtime
+
+
+Version 1.0.1
+	- Bugfixes from Scream
+	- Timelimit reached was adding to CP scores when it shouldn't
+	- Ready-up panel displaying to spectators
+
+Version 1.0.0
+	- Added ReadyUp Support
+
+Version 0.9.8
+	- Added support for players to assign their own teamnames until 1st half begins
+
+Version 0.9.7
+	- Added Autoupdate support
+
+Version 0.9.6
+	- Code optimations
+	- Moved SourceTV check to gametime as opposed to plugin load
+	- Added ability to change map after sequence has begun to allow for weapon whitelist to be utilized
+	- Added filter to reduce console spam
+
+Version 0.9.5
+	- Added CTF scoring
+	- Added commands to change team names
+
+Version 0.9.2
+	- Modified commands to use chat text hooks
+	- Added ability to return to a idle configuration
+	- Added commands to modify configs from client
+	- Added PUG support in the example configs
+
+Version 0.9
+	- First Public release

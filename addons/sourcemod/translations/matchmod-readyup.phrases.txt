@@ -1,0 +1,85 @@
+"Phrases"
+{
+	"Player previous ready"
+	{
+		"en"	"You are already ready"
+	}
+
+	"Player ready"
+	{
+		"en"	"You are now ready"
+	}
+	
+	"Player is ready"
+	{
+		"#format"	"{1:s}"
+		"en"	"{1} is ready"
+	}
+
+	"Player previous unready"
+	{
+		"en"	"You are already not ready"
+	}
+
+	"Player unready"
+	{
+		"en"	"You are now not ready"
+	}
+	
+	"Player is unready"
+	{
+		"#format"	"{1:s}"
+		"en"	"{1} is not ready"
+	}
+
+	"Force not allowed"
+	{
+		"en"	"You cannot force start at this time"
+	}
+	
+	"Red team minimum"
+	{
+		"en"	"Red team has minimum required players by league rules"
+	}
+	
+	"Red can start"
+	{
+		"en"	"Red can now use !start to declare their team as ready"
+	}
+	
+	"Red team ready"
+	{
+		"en"	"Red team is ready"
+	}
+	
+	"Blu team minimum"
+	{
+		"en"	"Blu team has minimum required players by league rules"
+	}
+	
+	"Blu can start"
+	{
+		"en"	"Blu can now use !start to declare their team as ready"
+	}
+	
+	"Blu team ready"
+	{
+		"en"	"Blu team is ready"
+	}
+	
+	"Countdown begin"
+	{
+		"en"	"Match begins in 15 seconds..."
+	}
+	
+	"Countdown aborted"
+	{
+		"en"	"Startup sequence aborted"
+	}
+	
+	"Begin ready up"
+	{
+		"en"	"Begin ready up"
+	}
+
+}

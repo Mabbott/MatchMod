@@ -1,0 +1,14 @@
+"Phrases"
+{
+	"Version"
+	{
+		"#format"	"{1:s}"
+		"en"	"Version: {1}"
+	}
+
+	"Begin pregame"
+	{
+		"en"	"Beginning Pre-game"
+	}
+
+}
