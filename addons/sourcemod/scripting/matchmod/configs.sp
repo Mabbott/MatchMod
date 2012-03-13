@@ -175,7 +175,7 @@ ExecuteIdleConfig() {
 
 	SetConVarInt(FindConVar("tv_delay"), 120);
 	SetConVarInt(FindConVar("tv_maxrate"), 8000);
-	SetConVarInt(FindConVar("tv_delaymapchange"), 0);
+	SetConVarInt(FindConVar("tv_delaymapchange"), 1);
 	
 	GetConVarString(FindConVar("servercfgfile"), sConfig, sizeof(sConfig));
 	ServerCommand("exec %s", sConfig);

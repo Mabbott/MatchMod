@@ -8,6 +8,7 @@ AUTHOR			: Charles 'Hawkeye' Mabbott
 DESCRIPTION		: Script designed to detect the map type and set some variabls to be referenced in other routinges
 REQUIREMENTS	: Sourcemod 1.2+
 
+Note				: Code heavily based on plugin written by Berni
 ===============================================================================================================
 */
 
@@ -21,8 +22,8 @@ REQUIREMENTS	: Sourcemod 1.2+
 #define ARENA 7
 #define TC 8
 
-new g_iMapType = 0;
-new String:g_sMapName[36];
+new g_iMapType = 0; // Stores the Map Type as a numeric value for easy reference with switch statements
+new String:g_sMapName[36];	// Stores the current mapname various functions like STV
 
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------

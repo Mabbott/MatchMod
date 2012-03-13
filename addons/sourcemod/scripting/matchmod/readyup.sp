@@ -11,18 +11,18 @@ REQUIREMENTS	: Sourcemod 1.2+
 ===============================================================================================================
 */
 
-new Handle:g_hCountdownActive = INVALID_HANDLE;
-new bool:g_bBluForced = false;
-new bool:g_bRedForced = false;
-new bool:g_bRedAllowForce = false;
-new bool:g_bBluAllowForce = false;
-new bool:g_bReadyStart = false;
-new bool:g_bReadyUp = false;
-new g_iReadyStatus[MAXPLAYERS + 1];
-new g_iRedTeamMin;
-new g_iRedTeamAuto;
-new g_iBluTeamMin;
-new g_iBluTeamAuto;
+new Handle:g_hCountdownActive = INVALID_HANDLE;	// Used to carry the timer after both teams have said go
+new bool:g_bBluForced = false;	// If true, the variable means the BLU team has readied up 1 man down
+new bool:g_bRedForced = false;	// If true, the variable means the RED team has readied up 1 man down
+new bool:g_bRedAllowForce = false;  // If true, the variable means BLU can now force themselves ready
+new bool:g_bBluAllowForce = false;	// If true, the variable means BLU can now force themselves ready
+new bool:g_bReadyStart = false;	// Stores that the match countdown has begun and determined if it needs to be cancelled
+new bool:g_bReadyUp = false;	// Variable they tells all functions if ready-up is currently active
+new g_iReadyStatus[MAXPLAYERS + 1];	// Array used to store the ready status of all the players
+new g_iRedTeamMin;	// Minimum number of RED players required to force a ready up (1 man down)
+new g_iRedTeamAuto;	// Minimum number of RED players for the team to be automatically readied up
+new g_iBluTeamMin;	// Minimum number of BLU players required (1 man down)
+new g_iBluTeamAuto;	// Minimum number of BLU players for the team to be automatically readied up
 
 
 /*

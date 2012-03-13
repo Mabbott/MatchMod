@@ -5,10 +5,290 @@
 		"#format"	"{1:s}"
 		"en"	"Version: {1}"
 	}
+	
+	"Red name assigned"
+	{
+		"#format"	"{1:s}"
+		"en"	"Red team assigned name {1}"
+	}
 
+	"Blue name assigned"
+	{
+		"#format"	"{1:s}"
+		"en"	"Blue team assigned name {1}"
+	}
+	
+	"Cannot name"
+	{
+		"en"	"You cannot assign a teamname at this time"
+	}
+
+	"Invalid Team"
+	{
+		"en"	"Invalid team name, name must be either red or blu"
+	}
+	
+	"Begin sequence"
+	{
+		"en"	"Beginning match sequence"
+	}
+	
+	"Recording start"
+	{
+		"en"	"Recording started"
+	}
+	
+	"Already recording"
+	{
+		"en"	"Already recording"
+	}
+	
+	"Recording stop"
+	{
+		"en"	"Recording stopped"
+	}
+	
+	"Enable alltalk"
+	{
+		"en"	"Alltalk has been enabled"
+	}
+
+	"Disable alltalk"
+	{
+		"en"	"Alltalk has been disabled"
+	}
+	
+	"Enable log"
+	{
+		"en"	"Logging has been enabled"
+	}
+	
+	"Disable log"
+	{
+		"en"	"Logging has been disabled"
+	}
+	
+	"Swap teams"
+	{
+		"en"	"Swapping teams"
+	}
+	
 	"Begin pregame"
 	{
 		"en"	"Beginning Pre-game"
 	}
+	"Begin first half"
+	{
+		"en"	"Beginning first half"
+	}
+	
+	"Match live"
+	{
+		"en"	"-- MATCH LIVE --"
+	}
+	
+	"End first half"
+	{
+		"en"	"Ending first half"
+	}
+	
+	"Half time"
+	{
+		"en"	"-- HALF TIME --"
+	}
 
+	"Begin second half"
+	{
+		"en"	"Beginning second half"
+	}
+	
+	"End regulation"
+	{
+		"en"	"Ending regulation"
+	}
+	
+	"Teams tied"
+	{
+		"en"	"Team are tied, prepare for overtime"
+	}
+	
+	"Prepare overtime"
+	{
+		"en"	"-- PREPARE FOR OVERTIME --"
+	}
+	
+	"End Game"
+	{
+		"en"	"End of Game"
+	}
+	
+	"Begin overtime"
+	{
+		"en"	"Beginning Overtime"
+	}
+	
+	"Server pregame"
+	{
+		//Example: [Servername] Pregame Complexity vs Blight
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"	"{1} Pregame {2} vs. {3}"
+	}
+	
+	"Server tied"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} Teams are tied"
+	}
+	
+	"Server leads"
+	{
+		//Example: [Servername] Complexity leads Blight 4-3
+		"#format"	"{1:s},{2:s},{3:d},{4:d}"
+		"en"	"{1} {2} leads {3}-{4}"
+	}
+	
+	"Force ready red"
+	{
+		"en"	"Red team has forced themselves to ready"
+	}
+	"Force ready blue"
+	{
+		"en"	"Blue team has forced themselves to ready"
+	}
+	
+	"Force ready no"
+	{
+		"en"	"You cannot force start at this time"
+	}
+	
+	"Ready already"
+	{
+		"en"	"You are already ready"
+	}
+	
+	"Ready now"
+	{
+		"en"	"You are now ready"
+	}
+	"Ready up"
+	{
+		//Example: coL.carnage is ready
+		"#format"	"{1:s}"
+		"en"	"{1} is ready"
+	}
+
+	"Ready not already"
+	{
+		"en"	"You are already not ready"
+	}
+	
+	"Ready not now"
+	{
+		"en"	"You are now not ready"
+	}
+	"Ready down"
+	{
+		//Example: coL.carnage is not ready
+		"#format"	"{1:s}"
+		"en"	"{1} is not ready"
+	}
+	
+	"Begin ready up"
+	{
+		"en"	"Beginning ready up"
+	}
+	
+	"Red team minimum"
+	{
+		"en"	"Red team has minimum required players by league rules"
+	}
+	"Red can start"
+	{
+		"en"	"Red can now use !start to declare their team as ready"
+	}
+	"Red team ready"
+	{
+		"en"	"Red team is Ready"
+	}
+	
+	"Blue team minimum"
+	{
+		"en"	"Blue team has minimum required players by league rules"
+	}
+	"Blue can start"
+	{
+		"en"	"Blue can now use !start to declare their team as ready"
+	}
+	"Blue team ready"
+	{
+		"en"	"Blue team is Ready"
+	}
+	
+	"Match in 15"
+	{
+		"en"	"Match begins in 15 seconds..."
+	}
+	
+	"Start aborted"
+	{
+		"en"	"Startup sequence aborted"
+	}
+	
+	"Match config not found"
+	{
+		"en"	"Config not found"
+	}
+	
+	"Match config executed"
+	{
+		"en"	"Executed config"
+	}
+	
+	"Config overtime"
+	{
+		"en"	"Configuring overtime"
+	}
+	
+	"Config idle"
+	{
+		"en"	"Configuring idle"
+	}
+	
+	"Config match"
+	{
+		"en"	"Configuring match rules"
+	}
+	
+	"Time remaining"
+	{
+		//Example: About 25:16 remain in the round
+		"#format"	"{1:s}"
+		"en"	"About {1} remaining in the round"
+	}
+	
+	"Score tied"
+	{
+		//Example: Teams are tied 2-2
+		"#format"	"{1:d},{2:d}"
+		"en"	"Team are tied {1}-{2}"
+	}
+	
+	"Score lead"
+	{
+		//Example: Complexity leads 4-3
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"	"{1} is leading {2}-{3}"
+	}
+	
+	"Score final tied"
+	{
+		"en"	"Match Over! Final Result: The teams have fought to a draw"
+	}
+
+	"Score final"
+	{
+		//Example: Match Over! Final Result: Complexity has won the match 5-4
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"	"Match Over! Final Result: {1} has won the match {2}-{3}"
+	}
 }

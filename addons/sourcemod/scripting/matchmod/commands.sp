@@ -12,6 +12,30 @@ REQUIREMENTS	: Sourcemod 1.2+
 */
 
 
+
+public Action:Command_MatchModEnd(client, args) {
+
+	if (CheckCommandAccess(client, "sm_endmatch", ADMFLAG_RESERVATION, true)) {
+		if (g_iMatchState > 0) {
+			g_bAllowHalf = false;
+			g_bAllowOT = false;
+			if (g_bReadyUp) {
+				End_ReadyUp();
+			}
+			g_bAllowReady = false;
+			g_iHalfScore = 0;
+			g_iMaxScore = 0;
+			g_iMinPlayers = 0;
+			g_iAutoPlayers = 0;
+			g_bSwapTeams = false;
+			g_iMatchState = 7;
+			ExecuteIdleConfig();
+		}
+	}
+	return Plugin_Handled;
+}
+
+
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 Action:Command_MatchModPug(client, args)
